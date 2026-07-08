@@ -30,7 +30,7 @@ sealmark/
 
 ## Brand System
 
-- **Palette:** Navy `#0B1F3A` · Brass `#B08D57` · Ivory `#F6F1E7`
+- **Palette:** Navy `#1B3A5C` · Brass `#B08D57` · Ivory `#F6F1E7`
 - **Typography:** IM Fell English (display) · Playfair Display (sub) · Montserrat (body/UI)
 - **Motif:** Octagonal "S" seal brand mark throughout
 
@@ -42,14 +42,18 @@ sealmark/
 4. Add custom domain (e.g., `sealmarkgroup.com` or `sealmarknotary.com`).
 5. Netlify auto-provisions SSL, required for Stripe.
 
-## Before Going Live: Replace Placeholders
+## Live-Ready Status
 
-| Placeholder | Where | Replace With |
-|---|---|---|
-| `https://calendly.com/sealmark` | All pages | Real Calendly link |
-| ~~`(516) 631-0081`~~ DONE | All pages | ✅ Real phone number added |
-| `hello@sealmarkgroup.com` | All pages | Real business email |
-| `Freeport, NY 11520` | All pages | Final mailing address |
+All placeholders have been filled in:
+
+| Item | Status |
+|---|---|
+| Calendly link (`calendly.com/taniasavory2026/sealmarkgroup`) | Live |
+| Phone `(516) 631-0081` | Live |
+| Email `info@sealmarkgroup.com` | Live |
+| Mailing address (Freeport, NY 11520) | Live |
+
+Update the mailing address only if it changes.
 
 ## Stripe Compliance Checklist
 
@@ -75,6 +79,22 @@ After the site is live on its final domain:
 4. Google will begin crawling and indexing all 14 URLs.
 
 **Important:** `sitemap.xml`, `robots.txt`, and the canonical tags in each blog post all use `https://sealmarkgroup.com`. If your final live domain is different, do a find-and-replace on that string across these files before submitting to Search Console.
+
+## Adding Your YouTube Videos
+
+The homepage has a "Notary tips, on video" section with two placeholder embeds. To add your real videos:
+
+1. Upload the video to YouTube.
+2. On the video page, copy the ID from the URL. Example: in `youtube.com/watch?v=ABC123xyz`, the ID is `ABC123xyz`.
+3. In `index.html`, find `VIDEO_ID_1` and `VIDEO_ID_2` and replace each with your real video ID.
+4. Update the caption text below each video.
+
+To add more than two videos, copy one `<div class="video-card">` block and paste it with a new ID.
+
+## Services Note
+
+Active services: Mobile Notary, Loan Signings, Field Inspections, General Notary Work.
+Coming soon (clearly labeled on the site): Remote Online Notarization and Apostille. When you are authorized for these, remove the `soon` class and the `badge-soon` line from those two cards, and change the footer links to drop "(soon)".
 
 ## Form Handling
 

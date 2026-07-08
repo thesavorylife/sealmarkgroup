@@ -4,12 +4,12 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Sealmark Group — Mobile Notary, RON, Apostille &amp; Loan Signings | NY</title>
-<meta name="description" content="Sealmark Group Inc. Professional mobile notary, Remote Online Notarization, apostille, and loan signing services across Queens, Brooklyn, Nassau, and Suffolk Counties." />
-<meta name="theme-color" content="#0B1F3A" />
+<meta name="description" content="Sealmark Group Inc. Mobile notary, loan signings, field inspections, and general notary services across Queens, Brooklyn, Nassau, and Suffolk Counties. RON and apostille coming soon." />
+<meta name="theme-color" content="#1B3A5C" />
 <style>
 /* ==========================================================================
    SEALMARK GROUP INC — Official Stylesheet
-   Brand: Navy #0B1F3A · Brass #B08D57 · Ivory #F6F1E7
+   Brand: Navy #1B3A5C · Brass #B08D57 · Ivory #F6F1E7
    Type:  IM Fell English (display) / Playfair Display (sub) / Montserrat (body/UI)
    ========================================================================== */
 
@@ -17,9 +17,9 @@
 
 :root {
   /* Palette */
-  --navy: #0B1F3A;
-  --navy-deep: #061428;
-  --navy-soft: #17304F;
+  --navy: #1B3A5C;
+  --navy-deep: #12283F;
+  --navy-soft: #2A4E75;
   --brass: #B08D57;
   --brass-light: #C9A876;
   --brass-deep: #8F6F3F;
@@ -28,8 +28,8 @@
   --parchment: #EFE7D5;
   --ink: #1C1C1C;
   --muted: #6B6862;
-  --line: rgba(11, 31, 58, 0.12);
-  --line-strong: rgba(11, 31, 58, 0.25);
+  --line: rgba(27, 58, 92, 0.12);
+  --line-strong: rgba(27, 58, 92, 0.25);
 
   --font-display: 'IM Fell English', 'Playfair Display', Georgia, serif;
   --font-sub: 'Playfair Display', Georgia, serif;
@@ -61,9 +61,12 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  background-color: transparent;
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(176, 141, 87, 0.04) 0%, transparent 45%),
-    radial-gradient(circle at 85% 80%, rgba(11, 31, 58, 0.03) 0%, transparent 45%);
+    radial-gradient(circle at 15% 20%, rgba(176, 141, 87, 0.06) 0%, transparent 42%),
+    radial-gradient(circle at 85% 80%, rgba(27, 58, 92, 0.05) 0%, transparent 42%),
+    repeating-linear-gradient(45deg, rgba(176, 141, 87, 0.022) 0px, rgba(176, 141, 87, 0.022) 1px, transparent 1px, transparent 11px),
+    repeating-linear-gradient(-45deg, rgba(27, 58, 92, 0.018) 0px, rgba(27, 58, 92, 0.018) 1px, transparent 1px, transparent 11px);
 }
 
 img { max-width: 100%; display: block; height: auto; }
@@ -294,6 +297,14 @@ section { padding: var(--section-y) 0; position: relative; }
 .nav-cta {
   padding: 0.6rem 1.25rem !important;
   font-size: 0.72rem !important;
+  background: var(--brass) !important;
+  border-color: var(--brass) !important;
+  color: var(--ivory) !important;
+}
+.nav-cta:hover {
+  background: var(--navy) !important;
+  border-color: var(--navy) !important;
+  color: var(--ivory) !important;
 }
 
 .nav-toggle {
@@ -322,7 +333,7 @@ section { padding: var(--section-y) 0; position: relative; }
     transform: translateY(-120%);
     visibility: hidden;
     transition: transform .35s ease, visibility 0s linear .35s;
-    box-shadow: 0 20px 30px -20px rgba(11, 31, 58, 0.15);
+    box-shadow: 0 20px 30px -20px rgba(27, 58, 92, 0.15);
   }
   .nav-links.open {
     transform: translateY(0);
@@ -443,7 +454,7 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 45px -22px rgba(11, 31, 58, 0.2);
+  box-shadow: 0 20px 45px -22px rgba(27, 58, 92, 0.2);
   border-color: var(--brass-light);
 }
 .service-card:hover::before { transform: scaleX(1); }
@@ -1052,7 +1063,7 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 .blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 45px -22px rgba(11, 31, 58, 0.2);
+  box-shadow: 0 20px 45px -22px rgba(27, 58, 92, 0.2);
   border-color: var(--brass-light);
 }
 .blog-card:hover::before { transform: scaleX(1); }
@@ -1228,6 +1239,60 @@ section { padding: var(--section-y) 0; position: relative; }
   line-height: 1.75;
 }
 
+/* ---------- Coming Soon badge ---------- */
+.service-card.soon { position: relative; }
+.service-card.soon .service-stamp { opacity: 0.55; }
+.badge-soon {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+  background: rgba(176, 141, 87, 0.14);
+  border: 1px solid rgba(176, 141, 87, 0.4);
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.service-card.soon .price { color: var(--muted); font-style: italic; }
+
+/* ---------- Video section ---------- */
+.videos { background: var(--ivory); }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.video-card {
+  background: var(--ivory-warm);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  background: var(--navy);
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+.video-card .video-caption {
+  padding: 1.25rem 1.5rem;
+  font-family: var(--font-sub);
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
 /* ---------- Reveal Animations ---------- */
 .reveal {
   opacity: 0;
@@ -1262,24 +1327,24 @@ section { padding: var(--section-y) 0; position: relative; }
       <li><a href="services.html">Services</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://calendly.com/sealmark" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Book Now</a></li>
+      <li><a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Book Now</a></li>
     </ul>
   </nav>
 </header>
 
 <section class="hero">
   <div class="container">
-    <span class="eyebrow">NY Commissioned · Bonded · RON Authorized</span>
+    <span class="eyebrow">NY Commissioned · Insured · Mobile &amp; Remote</span>
     <h1>Documents <em>signed,</em><br />sealed, &amp; delivered.</h1>
-    <p class="lede">Mobile notary, Remote Online Notarization, apostille, and loan signing services across Queens, Brooklyn, Nassau, and Suffolk Counties. Handled with care, accuracy, and respect for your time.</p>
+    <p class="lede">Mobile notary, loan signings, field inspections, and general notary services across Queens, Brooklyn, Nassau, and Suffolk Counties. Handled with care, accuracy, and respect for your time.</p>
     <div class="hero-actions">
-      <a href="https://calendly.com/sealmark" class="btn btn-brass" target="_blank" rel="noopener">Book an Appointment</a>
+      <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-brass" target="_blank" rel="noopener">Book an Appointment</a>
       <a href="services.html" class="btn btn-ghost-light">Explore Services</a>
     </div>
     <div class="hero-trust">
-      <span>Same-Day Available</span>
-      <span>Mobile &amp; Remote</span>
-      <span>Licensed in New York</span>
+      <span>Serving Long Island &amp; NYC</span>
+      <span>Mobile Service</span>
+      <span>E&amp;O Insured</span>
     </div>
   </div>
 </section>
@@ -1289,7 +1354,7 @@ section { padding: var(--section-y) 0; position: relative; }
     <div class="section-head reveal">
       <div class="ornament"><span class="ornament-stamp"></span></div>
       <span class="eyebrow">What We Offer</span>
-      <h2>Four services. One trusted seal.</h2>
+      <h2>Notary services, done right.</h2>
       <p>Every signing handled with the discretion it deserves and the convenience you need.</p>
     </div>
 
@@ -1303,27 +1368,45 @@ section { padding: var(--section-y) 0; position: relative; }
       </article>
 
       <article class="service-card reveal">
+        <div class="service-stamp">L</div>
+        <h3>Loan Signings</h3>
+        <p>Loan Signing Agent for refinances, purchases, HELOCs, reverse mortgages, and seller packages.</p>
+        <span class="price">Starting at quote</span>
+        <a href="services.html#loan-signings" class="btn btn-outline">Learn More</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-stamp">F</div>
+        <h3>Field Inspections</h3>
+        <p>Reliable on-site field inspections and document verification for lenders, servicers, and companies that need eyes on the ground.</p>
+        <span class="price">Starting at quote</span>
+        <a href="services.html#field-inspections" class="btn btn-outline">Learn More</a>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-stamp">G</div>
+        <h3>General Notary Work</h3>
+        <p>Everyday notarizations for individuals and businesses. Powers of attorney, estate documents, affidavits, and more.</p>
+        <span class="price">Starting at quote</span>
+        <a href="services.html#general-notary" class="btn btn-outline">Learn More</a>
+      </article>
+
+      <article class="service-card soon reveal">
+        <span class="badge-soon">Coming Soon</span>
         <div class="service-stamp">R</div>
         <h3>Remote Online Notarization</h3>
-        <p>Secure, audio-video notarization from anywhere in the U.S., fully compliant with New York RON standards.</p>
-        <span class="price">Starting at quote</span>
+        <p>Secure, audio-video notarization from anywhere. We are completing New York RON authorization and will offer this service soon.</p>
+        <span class="price">Coming soon</span>
         <a href="services.html#ron" class="btn btn-outline">Learn More</a>
       </article>
 
-      <article class="service-card reveal">
+      <article class="service-card soon reveal">
+        <span class="badge-soon">Coming Soon</span>
         <div class="service-stamp">A</div>
         <h3>Apostille Services</h3>
-        <p>End-to-end apostille processing for documents traveling internationally. Birth records, diplomas, corporate filings.</p>
-        <span class="price">Starting at quote</span>
+        <p>Processing for documents traveling internationally. This service is on the way as we expand what Sealmark offers.</p>
+        <span class="price">Coming soon</span>
         <a href="services.html#apostille" class="btn btn-outline">Learn More</a>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-stamp">L</div>
-        <h3>Loan Signings</h3>
-        <p>Certified Loan Signing Agent for refinances, purchases, HELOCs, reverse mortgages, and seller packages.</p>
-        <span class="price">Starting at quote</span>
-        <a href="services.html#loan-signings" class="btn btn-outline">Learn More</a>
       </article>
     </div>
   </div>
@@ -1435,9 +1518,34 @@ section { padding: var(--section-y) 0; position: relative; }
         <p>Standard apostille processing in New York typically takes 2 to 3 weeks. We offer expedited handling when timelines are tight. Full timing depends on the document type and the destination country.</p>
       </details>
       <details class="faq-item reveal">
-        <summary>Are you a Certified Loan Signing Agent?</summary>
-        <p>Yes. We carry the credentials, errors and omissions coverage, and background screening required by major title and signing services. We handle refinances, purchases, HELOCs, reverse mortgages, and seller packages.</p>
+        <summary>Do you handle loan signings?</summary>
+        <p>Yes. We work as a Loan Signing Agent for title companies, signing services, lenders, and individual borrowers, and we carry Errors &amp; Omissions insurance. We handle refinances, purchases, HELOCs, reverse mortgages, and seller packages.</p>
       </details>
+    </div>
+  </div>
+</section>
+
+<section class="videos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="ornament"><span class="ornament-stamp"></span></div>
+      <span class="eyebrow">Watch &amp; Learn</span>
+      <h2>Notary tips, on video.</h2>
+      <p>Short, practical videos on notarization, signings, and the paperwork moments that matter.</p>
+    </div>
+    <div class="video-grid">
+      <div class="video-card reveal">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Sealmark Group video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-caption">Replace VIDEO_ID_1 with your YouTube video ID</div>
+      </div>
+      <div class="video-card reveal">
+        <div class="video-embed">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Sealmark Group video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video-caption">Replace VIDEO_ID_2 with your YouTube video ID</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1446,7 +1554,7 @@ section { padding: var(--section-y) 0; position: relative; }
   <div class="container">
     <h2>Ready to schedule?</h2>
     <p>Book online in under two minutes. Mobile, in-person, and remote appointments available throughout the week.</p>
-    <a href="https://calendly.com/sealmark" class="btn btn-primary" target="_blank" rel="noopener">Book an Appointment</a>
+    <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary" target="_blank" rel="noopener">Book an Appointment</a>
   </div>
 </section>
 
@@ -1458,15 +1566,17 @@ section { padding: var(--section-y) 0; position: relative; }
           <span class="brand-mark">S</span>
           <span class="brand-text">Sealmark <em>Group</em></span>
         </div>
-        <p>Notary, Remote Online Notarization, apostille, and loan signing services across Queens, Brooklyn, Nassau, and Suffolk Counties.</p>
+        <p>Mobile notary, loan signings, field inspections, and general notary services across Queens, Brooklyn, Nassau, and Suffolk Counties.</p>
       </div>
       <div>
         <h5>Services</h5>
         <ul>
           <li><a href="services.html#mobile-notary">Mobile Notary</a></li>
-          <li><a href="services.html#ron">Remote Online Notarization</a></li>
-          <li><a href="services.html#apostille">Apostille</a></li>
-          <li><a href="services.html#loan-signings">Loan Signings</a></li>
+        <li><a href="services.html#loan-signings">Loan Signings</a></li>
+        <li><a href="services.html#field-inspections">Field Inspections</a></li>
+        <li><a href="services.html#general-notary">General Notary Work</a></li>
+          <li><a href="services.html#ron">Remote Online Notarization (soon)</a></li>
+          <li><a href="services.html#apostille">Apostille (soon)</a></li>
         </ul>
       </div>
       <div>
@@ -1474,13 +1584,13 @@ section { padding: var(--section-y) 0; position: relative; }
         <ul>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://calendly.com/sealmark" target="_blank" rel="noopener">Book Now</a></li>
+          <li><a href="https://calendly.com/taniasavory2026/sealmarkgroup" target="_blank" rel="noopener">Book Now</a></li>
         </ul>
       </div>
       <div>
         <h5>Contact</h5>
         <ul>
-          <li><a href="mailto:hello@sealmarkgroup.com">hello@sealmarkgroup.com</a></li>
+          <li><a href="mailto:info@sealmarkgroup.com">info@sealmarkgroup.com</a></li>
           <li><a href="tel:+15166310081">(516) 631‑0081</a></li>
           <li>Freeport, NY</li>
         </ul>

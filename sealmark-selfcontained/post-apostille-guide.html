@@ -15,11 +15,11 @@
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="How to Get a Document Apostilled in New York State" />
 <meta name="twitter:description" content="A step-by-step guide to getting a document apostilled in New York State, from notarization through the Department of State, plus common mistakes that cause rejections." />
-<meta name="theme-color" content="#0B1F3A" />
+<meta name="theme-color" content="#1B3A5C" />
 <style>
 /* ==========================================================================
    SEALMARK GROUP INC — Official Stylesheet
-   Brand: Navy #0B1F3A · Brass #B08D57 · Ivory #F6F1E7
+   Brand: Navy #1B3A5C · Brass #B08D57 · Ivory #F6F1E7
    Type:  IM Fell English (display) / Playfair Display (sub) / Montserrat (body/UI)
    ========================================================================== */
 
@@ -27,9 +27,9 @@
 
 :root {
   /* Palette */
-  --navy: #0B1F3A;
-  --navy-deep: #061428;
-  --navy-soft: #17304F;
+  --navy: #1B3A5C;
+  --navy-deep: #12283F;
+  --navy-soft: #2A4E75;
   --brass: #B08D57;
   --brass-light: #C9A876;
   --brass-deep: #8F6F3F;
@@ -38,8 +38,8 @@
   --parchment: #EFE7D5;
   --ink: #1C1C1C;
   --muted: #6B6862;
-  --line: rgba(11, 31, 58, 0.12);
-  --line-strong: rgba(11, 31, 58, 0.25);
+  --line: rgba(27, 58, 92, 0.12);
+  --line-strong: rgba(27, 58, 92, 0.25);
 
   --font-display: 'IM Fell English', 'Playfair Display', Georgia, serif;
   --font-sub: 'Playfair Display', Georgia, serif;
@@ -71,9 +71,12 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  background-color: transparent;
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(176, 141, 87, 0.04) 0%, transparent 45%),
-    radial-gradient(circle at 85% 80%, rgba(11, 31, 58, 0.03) 0%, transparent 45%);
+    radial-gradient(circle at 15% 20%, rgba(176, 141, 87, 0.06) 0%, transparent 42%),
+    radial-gradient(circle at 85% 80%, rgba(27, 58, 92, 0.05) 0%, transparent 42%),
+    repeating-linear-gradient(45deg, rgba(176, 141, 87, 0.022) 0px, rgba(176, 141, 87, 0.022) 1px, transparent 1px, transparent 11px),
+    repeating-linear-gradient(-45deg, rgba(27, 58, 92, 0.018) 0px, rgba(27, 58, 92, 0.018) 1px, transparent 1px, transparent 11px);
 }
 
 img { max-width: 100%; display: block; height: auto; }
@@ -304,6 +307,14 @@ section { padding: var(--section-y) 0; position: relative; }
 .nav-cta {
   padding: 0.6rem 1.25rem !important;
   font-size: 0.72rem !important;
+  background: var(--brass) !important;
+  border-color: var(--brass) !important;
+  color: var(--ivory) !important;
+}
+.nav-cta:hover {
+  background: var(--navy) !important;
+  border-color: var(--navy) !important;
+  color: var(--ivory) !important;
 }
 
 .nav-toggle {
@@ -332,7 +343,7 @@ section { padding: var(--section-y) 0; position: relative; }
     transform: translateY(-120%);
     visibility: hidden;
     transition: transform .35s ease, visibility 0s linear .35s;
-    box-shadow: 0 20px 30px -20px rgba(11, 31, 58, 0.15);
+    box-shadow: 0 20px 30px -20px rgba(27, 58, 92, 0.15);
   }
   .nav-links.open {
     transform: translateY(0);
@@ -453,7 +464,7 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 .service-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 45px -22px rgba(11, 31, 58, 0.2);
+  box-shadow: 0 20px 45px -22px rgba(27, 58, 92, 0.2);
   border-color: var(--brass-light);
 }
 .service-card:hover::before { transform: scaleX(1); }
@@ -1062,7 +1073,7 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 .blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 20px 45px -22px rgba(11, 31, 58, 0.2);
+  box-shadow: 0 20px 45px -22px rgba(27, 58, 92, 0.2);
   border-color: var(--brass-light);
 }
 .blog-card:hover::before { transform: scaleX(1); }
@@ -1238,6 +1249,60 @@ section { padding: var(--section-y) 0; position: relative; }
   line-height: 1.75;
 }
 
+/* ---------- Coming Soon badge ---------- */
+.service-card.soon { position: relative; }
+.service-card.soon .service-stamp { opacity: 0.55; }
+.badge-soon {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--brass-deep);
+  background: rgba(176, 141, 87, 0.14);
+  border: 1px solid rgba(176, 141, 87, 0.4);
+  padding: 0.3rem 0.7rem;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+}
+.service-card.soon .price { color: var(--muted); font-style: italic; }
+
+/* ---------- Video section ---------- */
+.videos { background: var(--ivory); }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.video-card {
+  background: var(--ivory-warm);
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.video-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  background: var(--navy);
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+.video-card .video-caption {
+  padding: 1.25rem 1.5rem;
+  font-family: var(--font-sub);
+  font-size: 1.05rem;
+  color: var(--navy);
+}
+
 /* ---------- Reveal Animations ---------- */
 .reveal {
   opacity: 0;
@@ -1338,7 +1403,7 @@ section { padding: var(--section-y) 0; position: relative; }
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://calendly.com/sealmark" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Book Now</a></li>
+      <li><a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Book Now</a></li>
     </ul>
   </nav>
 </header>
@@ -1456,22 +1521,24 @@ section { padding: var(--section-y) 0; position: relative; }
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="brand-inline"><span class="brand-mark">S</span><span class="brand-text">Sealmark <em>Group</em></span></div>
-        <p>Notary, Remote Online Notarization, apostille, and loan signing services across Queens, Brooklyn, Nassau, and Suffolk Counties.</p>
+        <p>Mobile notary, loan signings, field inspections, and general notary services across Queens, Brooklyn, Nassau, and Suffolk Counties.</p>
       </div>
       <div><h5>Services</h5><ul>
         <li><a href="services.html#mobile-notary">Mobile Notary</a></li>
-        <li><a href="services.html#ron">Remote Online Notarization</a></li>
-        <li><a href="services.html#apostille">Apostille</a></li>
         <li><a href="services.html#loan-signings">Loan Signings</a></li>
+        <li><a href="services.html#field-inspections">Field Inspections</a></li>
+        <li><a href="services.html#general-notary">General Notary Work</a></li>
+        <li><a href="services.html#ron">Remote Online Notarization (soon)</a></li>
+        <li><a href="services.html#apostille">Apostille (soon)</a></li>
       </ul></div>
       <div><h5>Company</h5><ul>
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://calendly.com/sealmark" target="_blank" rel="noopener">Book Now</a></li>
+        <li><a href="https://calendly.com/taniasavory2026/sealmarkgroup" target="_blank" rel="noopener">Book Now</a></li>
       </ul></div>
       <div><h5>Contact</h5><ul>
-        <li><a href="mailto:hello@sealmarkgroup.com">hello@sealmarkgroup.com</a></li>
+        <li><a href="mailto:info@sealmarkgroup.com">info@sealmarkgroup.com</a></li>
         <li><a href="tel:+15166310081">(516) 631‑0081</a></li>
         <li>Freeport, NY</li>
       </ul></div>
