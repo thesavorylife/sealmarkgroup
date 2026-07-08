@@ -63,10 +63,10 @@ body::before {
   z-index: 0;
   background-color: transparent;
   background-image:
-    radial-gradient(circle at 15% 20%, rgba(176, 141, 87, 0.06) 0%, transparent 42%),
-    radial-gradient(circle at 85% 80%, rgba(27, 58, 92, 0.05) 0%, transparent 42%),
-    repeating-linear-gradient(45deg, rgba(176, 141, 87, 0.022) 0px, rgba(176, 141, 87, 0.022) 1px, transparent 1px, transparent 11px),
-    repeating-linear-gradient(-45deg, rgba(27, 58, 92, 0.018) 0px, rgba(27, 58, 92, 0.018) 1px, transparent 1px, transparent 11px);
+    radial-gradient(circle at 15% 20%, rgba(176, 141, 87, 0.08) 0%, transparent 42%),
+    radial-gradient(circle at 85% 80%, rgba(27, 58, 92, 0.07) 0%, transparent 42%),
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.05) 0px, rgba(27, 58, 92, 0.05) 1px, transparent 1px, transparent 14px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.05) 0px, rgba(176, 141, 87, 0.05) 1px, transparent 1px, transparent 14px);
 }
 
 img { max-width: 100%; display: block; height: auto; }
@@ -422,9 +422,12 @@ section { padding: var(--section-y) 0; position: relative; }
 
 /* ---------- Service Card Grid ---------- */
 .services {
-  background: var(--ivory);
+  background-color: var(--ivory);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.13) 0px, rgba(27, 58, 92, 0.13) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.13) 0px, rgba(176, 141, 87, 0.13) 1px, transparent 1px, transparent 15px);
   position: relative;
-}
+  z-index: 1;}
 
 .services-grid {
   display: grid;
@@ -533,9 +536,14 @@ section { padding: var(--section-y) 0; position: relative; }
 
 /* ---------- Our Purpose (Mission + Vision) ---------- */
 .purpose {
+  background-color: var(--ivory-warm);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.13) 0px, rgba(27, 58, 92, 0.13) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.13) 0px, rgba(176, 141, 87, 0.13) 1px, transparent 1px, transparent 15px);
+
   background: var(--ivory-warm);
   position: relative;
-}
+  z-index: 1;}
 .purpose-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -593,7 +601,14 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 
 /* ---------- How It Works ---------- */
-.how { background: var(--ivory); }
+.how {
+  background: var(--ivory);
+  background-color: var(--ivory-warm);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.13) 0px, rgba(27, 58, 92, 0.13) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.13) 0px, rgba(176, 141, 87, 0.13) 1px, transparent 1px, transparent 15px);
+  position: relative;
+  z-index: 1;}
 
 .steps {
   display: grid;
@@ -661,7 +676,14 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 
 /* ---------- About Preview ---------- */
-.about-preview { background: var(--ivory); }
+.about-preview {
+  background: var(--ivory);
+  background-color: var(--ivory-warm);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.13) 0px, rgba(27, 58, 92, 0.13) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.13) 0px, rgba(176, 141, 87, 0.13) 1px, transparent 1px, transparent 15px);
+  position: relative;
+  z-index: 1;}
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -724,7 +746,14 @@ section { padding: var(--section-y) 0; position: relative; }
 }
 
 /* ---------- FAQ ---------- */
-.faq { background: var(--ivory-warm); }
+.faq {
+  background: var(--ivory-warm);
+  background-color: var(--ivory-warm);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.13) 0px, rgba(27, 58, 92, 0.13) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.13) 0px, rgba(176, 141, 87, 0.13) 1px, transparent 1px, transparent 15px);
+  position: relative;
+  z-index: 1;}
 .faq-list { max-width: 820px; margin: 0 auto; }
 .faq-item {
   border-bottom: 1px solid var(--line);
@@ -1259,13 +1288,24 @@ section { padding: var(--section-y) 0; position: relative; }
 .service-card.soon .price { color: var(--muted); font-style: italic; }
 
 /* ---------- Video section ---------- */
-.videos { background: var(--ivory); }
+.videos {
+  background: var(--ivory);
+  background-color: var(--ivory-warm);
+  background-image:
+    repeating-linear-gradient(45deg, rgba(27, 58, 92, 0.13) 0px, rgba(27, 58, 92, 0.13) 1px, transparent 1px, transparent 15px),
+    repeating-linear-gradient(-45deg, rgba(176, 141, 87, 0.13) 0px, rgba(176, 141, 87, 0.13) 1px, transparent 1px, transparent 15px);
+  position: relative;
+  z-index: 1;}
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
+}
+.video-grid.single {
+  max-width: 720px;
+  grid-template-columns: 1fr;
 }
 .video-card {
   background: var(--ivory-warm);
@@ -1530,21 +1570,15 @@ section { padding: var(--section-y) 0; position: relative; }
     <div class="section-head reveal">
       <div class="ornament"><span class="ornament-stamp"></span></div>
       <span class="eyebrow">Watch &amp; Learn</span>
-      <h2>Notary tips, on video.</h2>
-      <p>Short, practical videos on notarization, signings, and the paperwork moments that matter.</p>
+      <h2>Meet Sealmark Group.</h2>
+      <p>A quick introduction to who we are and how we serve Queens, Brooklyn, Nassau, and Suffolk.</p>
     </div>
-    <div class="video-grid">
+    <div class="video-grid single">
       <div class="video-card reveal">
         <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Sealmark Group video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Sealmark Group introduction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <div class="video-caption">Replace VIDEO_ID_1 with your YouTube video ID</div>
-      </div>
-      <div class="video-card reveal">
-        <div class="video-embed">
-          <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Sealmark Group video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="video-caption">Replace VIDEO_ID_2 with your YouTube video ID</div>
+        <div class="video-caption">Replace VIDEO_ID_1 with your intro video's YouTube ID</div>
       </div>
     </div>
   </div>

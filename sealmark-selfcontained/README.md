@@ -80,16 +80,16 @@ After the site is live on its final domain:
 
 **Important:** `sitemap.xml`, `robots.txt`, and the canonical tags in each blog post all use `https://sealmarkgroup.com`. If your final live domain is different, do a find-and-replace on that string across these files before submitting to Search Console.
 
-## Adding Your YouTube Videos
+## Adding Your YouTube Intro Video
 
-The homepage has a "Notary tips, on video" section with two placeholder embeds. To add your real videos:
+The homepage has a "Meet Sealmark Group" section with one video slot for your intro video. To add it:
 
 1. Upload the video to YouTube.
 2. On the video page, copy the ID from the URL. Example: in `youtube.com/watch?v=ABC123xyz`, the ID is `ABC123xyz`.
-3. In `index.html`, find `VIDEO_ID_1` and `VIDEO_ID_2` and replace each with your real video ID.
-4. Update the caption text below each video.
+3. In `index.html`, find `VIDEO_ID_1` and replace it with your real video ID.
+4. Update the caption text below the video (or delete the caption line if you don't want one).
 
-To add more than two videos, copy one `<div class="video-card">` block and paste it with a new ID.
+To add more videos later, copy the `<div class="video-card">` block, paste it inside `<div class="video-grid single">`, give the new one a different ID, and remove the word `single` from `video-grid single` so they sit side by side.
 
 ## Services Note
 
