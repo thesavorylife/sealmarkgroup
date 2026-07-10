@@ -30,7 +30,7 @@ sealmark/
 
 ## Brand System
 
-- **Palette:** Navy `#1B3A5C` · Brass `#B08D57` · Ivory `#F6F1E7`
+- **Palette:** Navy `#142845` · Brass `#D4A94E` · Ivory `#F6F1E7`
 - **Typography:** IM Fell English (display) · Playfair Display (sub) · Montserrat (body/UI)
 - **Motif:** Octagonal "S" seal brand mark throughout
 
