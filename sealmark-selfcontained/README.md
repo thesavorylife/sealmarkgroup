@@ -39,7 +39,7 @@ sealmark/
 1. Push folder to a GitHub repo named `sealmark`.
 2. Connect to Netlify: New site from Git, choose the repo.
 3. Build settings: leave blank (no build step). Publish directory: `.`
-4. Add custom domain (e.g., `sealmarkgroup.com` or `sealmarknotary.com`).
+4. Add custom domain (e.g., `sealmarkgroupinc.com` or `sealmarknotary.com`).
 5. Netlify auto-provisions SSL, required for Stripe.
 
 ## Live-Ready Status
@@ -50,7 +50,7 @@ All placeholders have been filled in:
 |---|---|
 | Calendly link (`calendly.com/taniasavory2026/sealmarkgroup`) | Live |
 | Phone `(516) 631-0081` | Live |
-| Email `info@sealmarkgroup.com` | Live |
+| Email `info@sealmarkgroupinc.com` | Live |
 | Mailing address (Freeport, NY 11520) | Live |
 
 Update the mailing address only if it changes.
@@ -78,7 +78,7 @@ After the site is live on its final domain:
 3. Submit your sitemap: enter `sitemap.xml` in the Sitemaps section.
 4. Google will begin crawling and indexing all 14 URLs.
 
-**Important:** `sitemap.xml`, `robots.txt`, and the canonical tags in each blog post all use `https://sealmarkgroup.com`. If your final live domain is different, do a find-and-replace on that string across these files before submitting to Search Console.
+**Important:** `sitemap.xml`, `robots.txt`, and the canonical tags in each blog post all use `https://sealmarkgroupinc.com`. If your final live domain is different, do a find-and-replace on that string across these files before submitting to Search Console.
 
 ## Adding Your YouTube Intro Video
 
