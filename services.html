@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Services — Sealmark Group</title>
+<title>Services | Sealmark Group</title>
 <meta name="description" content="Mobile notary, loan signings, field inspections, and general notary work across Queens, Brooklyn, Nassau, and Suffolk. RON and apostille coming soon. Quotes on request." />
 <meta name="theme-color" content="#142845" />
 <style>
@@ -1330,14 +1330,20 @@ section { padding: var(--section-y) 0; position: relative; }
   }
 }
 
+
+/* ---------- Logo image ---------- */
+.brand-logo { width: 50px; height: 50px; flex-shrink: 0; display: block; }
+@media (max-width: 720px) { .brand-logo { width: 42px; height: 42px; } }
 </style>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8cG9seWdvbiBwb2ludHM9IjMwLDAgNzAsMCAxMDAsMzAgMTAwLDcwIDcwLDEwMCAzMCwxMDAgMCw3MCAwLDMwIiBmaWxsPSIjMEIxRjNBIi8+CiAgPHBvbHlnb24gcG9pbnRzPSIzNCw2IDY2LDYgOTQsMzQgOTQsNjYgNjYsOTQgMzQsOTQgNiw2NiA2LDM0IiBmaWxsPSJub25lIiBzdHJva2U9IiNCMDhENTciIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHRleHQgeD0iNTAiIHk9IjY4IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iR2VvcmdpYSwgc2VyaWYiIGZvbnQtc3R5bGU9Iml0YWxpYyIgZm9udC1zaXplPSI0NiIgZmlsbD0iI0M5QTg3NiI+UzwvdGV4dD4KPC9zdmc+Cg==" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 </head>
 <body>
 
 <header class="site-header">
   <nav class="nav" aria-label="Primary">
-    <a href="index.html" class="brand"><span class="brand-mark">S</span><span class="brand-text">Sealmark <em>Group Inc</em></span></a>
+    <a href="index.html" class="brand"><img class="brand-logo" src="/assets/logo-mark.svg" alt="" width="50" height="50" /><span class="brand-text">Sealmark <em>Group Inc</em></span></a>
     <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
@@ -1345,7 +1351,7 @@ section { padding: var(--section-y) 0; position: relative; }
       <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Blog</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary nav-cta" target="_blank" rel="noopener">Book Now</a></li>
+      <li><a href="contact.html#contact-form" class="btn btn-primary nav-cta">Book Now</a></li>
     </ul>
   </nav>
 </header>
@@ -1376,7 +1382,7 @@ section { padding: var(--section-y) 0; position: relative; }
           <li>Hospital &amp; care-facility visits</li>
         </ul>
         <span class="price">Starting at quote · Travel fees apply outside primary area</span>
-        <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary" target="_blank" rel="noopener">Request a Quote</a>
+        <a href="contact.html#contact-form" class="btn btn-primary">Request a Quote</a>
       </article>
 
       <article id="loan-signings" class="service-card reveal">
@@ -1393,7 +1399,7 @@ section { padding: var(--section-y) 0; position: relative; }
           <li>Same-day &amp; after-hours availability</li>
         </ul>
         <span class="price">Starting at quote · Title company rate sheets accepted</span>
-        <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary" target="_blank" rel="noopener">Request a Quote</a>
+        <a href="contact.html#contact-form" class="btn btn-primary">Request a Quote</a>
       </article>
 
       <article id="field-inspections" class="service-card reveal">
@@ -1409,7 +1415,7 @@ section { padding: var(--section-y) 0; position: relative; }
           <li>Coverage across our service area</li>
         </ul>
         <span class="price">Starting at quote · Volume rates available</span>
-        <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary" target="_blank" rel="noopener">Request a Quote</a>
+        <a href="contact.html#contact-form" class="btn btn-primary">Request a Quote</a>
       </article>
 
       <article id="general-notary" class="service-card reveal">
@@ -1425,35 +1431,20 @@ section { padding: var(--section-y) 0; position: relative; }
           <li>Consent &amp; travel authorization letters</li>
         </ul>
         <span class="price">Starting at quote</span>
-        <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary" target="_blank" rel="noopener">Request a Quote</a>
-      </article>
-
-      <article id="consulting" class="service-card reveal">
-        <div class="service-stamp">C</div>
-        <h3>General Business Consulting</h3>
-        <p>Practical, grounded guidance for small businesses and entrepreneurs working through operations, documentation, and process decisions.</p>
-        <ul class="service-features">
-          <li>Business process &amp; operations review</li>
-          <li>Documentation &amp; recordkeeping systems</li>
-          <li>Startup &amp; small business guidance</li>
-          <li>Vendor &amp; workflow coordination</li>
-          <li>General administrative strategy</li>
-        </ul>
-        <span class="price">Starting at quote</span>
-        <a href="https://calendly.com/taniasavory2026/sealmarkgroup" class="btn btn-primary" target="_blank" rel="noopener">Request a Quote</a>
+        <a href="contact.html#contact-form" class="btn btn-primary">Request a Quote</a>
       </article>
 
       <article id="ron" class="service-card soon reveal">
         <span class="badge-soon">Coming Soon</span>
         <div class="service-stamp">R</div>
         <h3>Remote Online Notarization</h3>
-        <p>Secure, audio-video notarization from anywhere. We are completing New York RON authorization and will offer this service soon.</p>
+        <p>Secure, audio-video notarization online. We are completing New York RON authorization and will offer this service soon.</p>
         <ul class="service-features">
           <li>Encrypted audio-video session</li>
           <li>Multi-factor identity verification</li>
           <li>Tamper-evident digital seal</li>
           <li>Audit trail &amp; session retention</li>
-          <li>Available to signers nationwide</li>
+          <li>Signer eligibility per New York law</li>
         </ul>
         <span class="price">Coming soon</span>
         <a href="contact.html" class="btn btn-outline">Ask to Be Notified</a>
@@ -1491,15 +1482,14 @@ section { padding: var(--section-y) 0; position: relative; }
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div class="brand-inline"><span class="brand-mark">S</span><span class="brand-text">Sealmark <em>Group Inc</em></span></div>
-        <p>Mobile notary, loan signings, field inspections, general notary services, and business consulting across Queens, Brooklyn, Nassau, and Suffolk Counties.</p>
+        <div class="brand-inline"><img class="brand-logo" src="/assets/logo-mark-footer.svg" alt="" width="50" height="50" /><span class="brand-text">Sealmark <em>Group Inc</em></span></div>
+        <p>Mobile notary, loan signings, field inspections, and general notary services across Queens, Brooklyn, Nassau, and Suffolk Counties.</p>
       </div>
       <div><h5>Services</h5><ul>
         <li><a href="services.html#mobile-notary">Mobile Notary</a></li>
         <li><a href="services.html#loan-signings">Loan Signings</a></li>
         <li><a href="services.html#field-inspections">Field Inspections</a></li>
         <li><a href="services.html#general-notary">General Notary Work</a></li>
-        <li><a href="services.html#consulting">General Business Consulting</a></li>
           <li><a href="services.html#ron">Remote Online Notarization (soon)</a></li>
         <li><a href="services.html#apostille">Apostille (soon)</a></li>
       </ul></div>
@@ -1507,7 +1497,7 @@ section { padding: var(--section-y) 0; position: relative; }
         <li><a href="about.html">About</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://calendly.com/taniasavory2026/sealmarkgroup" target="_blank" rel="noopener">Book Now</a></li>
+        <li><a href="contact.html#contact-form">Book Now</a></li>
       </ul></div>
       <div><h5>Contact</h5><ul>
         <li><a href="mailto:info@sealmarkgroupinc.com">info@sealmarkgroupinc.com</a></li>
@@ -1516,7 +1506,7 @@ section { padding: var(--section-y) 0; position: relative; }
       </ul></div>
     </div>
     <div class="footer-bottom">
-      <div>© <span id="year"></span> Sealmark Group Inc. All rights reserved.</div>
+      <div>© <span id="year"></span> Sealmark Group Inc, a New York corporation. All rights reserved.</div>
       <div class="legal-links">
         <a href="terms.html">Terms of Service</a>
         <a href="privacy.html">Privacy Policy</a>
